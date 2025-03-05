@@ -1,0 +1,19 @@
+api_platform:
+    title: 'Networking Api'
+    description: 'Networking App for business'
+    version: '0.0.1'
+
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+
+    patch_formats:
+        json: ['application/merge-patch+json']
+
+    swagger:
+        versions: [3]
+        api_keys:
+            apiKey:
+                name: Authorization
+                type: header
+        swagger_ui_extra_configuration:
+            persistAuthorization: true
